@@ -1,139 +1,73 @@
-*{
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* display: inline; */
 }
 
-body{
-position: relative;
-    background-color: rgb(150, 150, 250);
+body {
+    background-color: #d9dcd6;
 }
-
-ul{
-display: inline;
-}
-
-header{
-    text-align: center;
+/* jfkdlafjdlas */
+.header {
     display: block;
-    padding: 10px;
-    background-color: black;
-    color: blue;
-}
-
-li{
-    display: inline;
-   position: relative; 
-   margin-left: 25%;
-}
-
-header{
-
-}
-
-p{
-
-}
-
-h1{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
     
 }
 
-h2{
-
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
 }
 
-a{
-    color: lime;
+.header h1 .seo {
+    color: #d9dcd6;
 }
 
-footer{
-    z-index: 5;
-    background-color: ghostwhite;
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-nav{
-    background-color: darkblue;
-    position: fixed;
-    width: 100%;
+.header div ul {
+    list-style-type: none;
 }
 
-/* section{
-    display: inline;
-} */
-
-.aboutme{
-    background-color: #d1a8a4;
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
 
-.ptojects{
-
+.aboutme h1{
+    margin-left: 20%;
+    margin-right: 5%;
+    font-size: 48px;
+    
 }
 
-.contact{
-
+.aboutme p{
+    padding-left: 4%;
+    border-left-width: 2px;
+    border-left-color: rgb(25, 0, 255);
+    border-left-style: solid;
 }
 
-.card{
-
+a {
+    color: #5eb6c5;
+}
+section div h1{
+    color: rgb(25, 0, 255);
+    font-size: large;
 }
 
-ul{
-    /* position: fixed; */
-    flex-wrap: wrap;
+section div p{
+    border-left: #2f00ff 2px;
+    color: rgb(25, 0, 255);
 }
-
-header{
-display: inline;
-}
-
-p{
-
-}
-
-h1{
-text-align: center;
-}
-
-h2{
-text-align: center;
-}
-
-.img1{
-    margin-left: 35%;
-    height: 300px;
-    width: 400px;
-}
-
-.img2{
-display: block;
-}
-
-.img3{
-  /* margin-left: 15%;   */
-  width: 50%;
-  display: inline;
-}
-
-#li1{
-    margin-left: 15%;
-}
-
-#hed{
-display: block;
-}
-
-#hed2{
-position: absolute;
-}
-
-#hed3{
-    position: absolute;
-}
-
-#hed4{
-    position: absolute; 
-    /* left: -50%; */
-}
-
-/* #img123{
-    position: relative;
-    left: 50%;
-} */
