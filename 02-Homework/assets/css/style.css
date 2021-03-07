@@ -1,0 +1,139 @@
+*{
+}
+
+body{
+position: relative;
+    background-color: rgb(150, 150, 250);
+}
+
+ul{
+display: inline;
+}
+
+header{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: blue;
+}
+
+li{
+    display: inline;
+   position: relative; 
+   margin-left: 25%;
+}
+
+header{
+
+}
+
+p{
+
+}
+
+h1{
+    
+}
+
+h2{
+
+}
+
+a{
+    color: lime;
+}
+
+footer{
+    z-index: 5;
+    background-color: ghostwhite;
+}
+
+nav{
+    background-color: darkblue;
+    position: fixed;
+    width: 100%;
+}
+
+/* section{
+    display: inline;
+} */
+
+.aboutme{
+    background-color: #d1a8a4;
+}
+
+.ptojects{
+
+}
+
+.contact{
+
+}
+
+.card{
+
+}
+
+ul{
+    /* position: fixed; */
+    flex-wrap: wrap;
+}
+
+header{
+display: inline;
+}
+
+p{
+
+}
+
+h1{
+text-align: center;
+}
+
+h2{
+text-align: center;
+}
+
+.img1{
+    margin-left: 35%;
+    height: 300px;
+    width: 400px;
+}
+
+.img2{
+display: block;
+}
+
+.img3{
+  /* margin-left: 15%;   */
+  width: 50%;
+  display: inline;
+}
+
+#li1{
+    margin-left: 15%;
+}
+
+#hed{
+display: block;
+}
+
+#hed2{
+position: absolute;
+}
+
+#hed3{
+    position: absolute;
+}
+
+#hed4{
+    position: absolute; 
+    /* left: -50%; */
+}
+
+/* #img123{
+    position: relative;
+    left: 50%;
+} */
