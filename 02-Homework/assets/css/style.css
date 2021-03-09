@@ -70,17 +70,19 @@ body {
 }
 
 .aboutme h1{
-    margin-left: 20%;
+
     margin-right: 5%;
     font-size: 48px;
-    
+    /* padding-right: 4%;
+    border-right-width: 3px;
+    border-right-color: rgb(25, 0, 255);
+    border-right-style: solid;
+    padding-top: 90px;
+    padding-bottom: 90px; */
+    float: left;
 }
 
 .aboutme p{
-    padding-left: 4%;
-    border-left-width: 2px;
-    border-left-color: rgb(25, 0, 255);
-    border-left-style: solid;
 }
 
 a {
@@ -92,7 +94,6 @@ section div h1{
 }
 
 section div p{
-    border-left: #2f00ff 2px;
     color: rgb(25, 0, 255);
 }
  
