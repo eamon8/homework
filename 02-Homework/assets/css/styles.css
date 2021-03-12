@@ -1,0 +1,205 @@
+/* built by Elmir Lekovic */
+/* portfolio app css */
+
+/* This CSS is setup as mobile first */
+
+/* Setting up variables to be used in the css */
+:root {
+    /* set color variables */
+    --white: #fff;
+    --lighter-dark: rgb(199, 199, 199);
+    /* set corner radius to 25px  */
+    --border-radius: 25px;
+    --section-border-width: 2px;
+    --app-color:rgb(38, 147, 248);
+  }
+/* body background and global font family setup */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--white);
+} 
+
+                                               /* Header CSS start */
+
+/* formating the mobile header with flex, padding, flex wrap and bottom border */
+.header {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    color: #ffffff;
+    border-bottom: var(--section-border-width) solid var(--lighter-dark);
+}
+
+.header h1 {
+    position: relative;
+    color: var(--app-color);
+    }
+
+/* Header Image sizing */
+/* Centering header divs for logo and navigation on mobile device */
+.header div{
+    text-align: center;
+    flex: 1 0 100%;
+}
+/* Header Navigation padding and font size declearation */
+.navigation ul{
+    padding-top: 15px;
+    font-size: 20px;
+    list-style-type: none;  
+}
+/* setting top margin of the navigation items on mobile device */
+.navigation ul li {
+    margin: 0 0 15px 0;
+}
+/* removing any default and sudo decorations on the a tag  */
+.navigation ul li a, .navigation ul li a:active, .navigation ul li a:visited{
+    text-decoration: none;
+    color: gray;
+}
+/* setting the hover color for the navigation items */
+.navigation ul li a:hover{
+    color: var(--app-color);
+}
+/* Header -- logo, navigation setup for non mobile devices */
+@media screen and (min-width: 768px) {
+    /* set logo flex size and align to the left */
+    /* header logo on larger screens */
+    .header .logo{
+        text-align: left;
+        flex: 1 0 30%
+    }
+    /* set navigation flex size */
+    .header .navigation{
+        flex: 1 0 70%
+    }
+     /* set navigation - float and add margin to the right */
+    .navigation ul{
+        margin-right: 20px;
+        float: right;
+    }
+    /* display the links in the header inline and add margin to the left  */
+    .navigation ul li {
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+  }
+
+                                                /* End of header CSS */
+
+                                           /* Start Main Section Formating */                                               
+
+/* setting mobile first css for the main tag and sections */
+main{
+    display: flex;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+}
+/* setting the flex display and flex wrap as well as centering the main section with 30px top and bottom margin */
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+    flex: 1 0 100%;
+}
+/* mobile first width and global font line hight */
+main section div{
+    line-height: 1.5;
+}
+/* left container specific CSS */
+main section .left-container{
+    flex: 1 0 90%;
+    border-right:none;
+    border-bottom: var(--section-border-width) solid var(--lighter-dark);
+}
+/* Section h2 title styling */
+main section .left-container h2{
+    font-size: 4rem;
+    color: var(--app-color);
+    margin-right: 20px;
+}
+/* right containter specific CSS */
+main section .right-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/* right side article tags formating margin-top margin right and the flex size*/
+main section .right-container article{
+    position: relative;
+    margin-bottom: 30px;
+    flex: 1 0 100%;
+}
+
+/* setting the article image: transition, width and border */
+main section .right-container article img{
+    width: 100%;
+    transition: .5s ease;
+    border: var(--section-border-width) solid var(--lighter-dark);
+}
+/* overlay animation on article hover the image transparancy changes */
+.right-container article:hover img{
+    opacity: 0.3;
+}
+/* formating for the description div rounding corners and positioning to the bottom of the screen */
+.right-container article .app-desc{
+    position: absolute;
+    bottom: 10%;
+    left:0px;
+    padding: 3%;
+    background-color: var(--lighter-dark);
+    border-top: var(--section-border-width) solid black;
+    border-right: var(--section-border-width) solid black;
+    border-bottom: var(--section-border-width) solid black;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+/* formating the description heading */
+.right-container article .app-desc h3{
+    font-size: 20px;
+}
+.right-container article a:visited, .right-container article a:active, .right-container article a{
+    color: black;
+}
+/* non mobile device main section formating */
+@media screen and (min-width: 768px) {
+
+    .header  h1{
+        position: absolute;
+    }
+    
+    /* decreasing the flex width of leftcontainer changing the border side */
+    main section .left-container{
+        flex: 1 0 20%;
+        border-bottom: none;
+        border-right: 10px solid var(--app-color);
+    }
+    /* deacresing the flex width of the right container */
+    main section .right-container{
+        flex: 1 0 70%;
+        padding-left:20px;
+        margin-top: 0px;
+    }
+    /* making all other article except the first article in services container 40% flex width  */
+    main section .services article:not(:first-child){
+        flex: 1 0 50%;
+    }
+    /* changing the size and aligment of the h2 in left container  */
+    main section .left-container h2{
+        font-size: 3rem;
+        text-align: right;
+    } 
+}
+                                           /* End Main Section Formating */                                               
+
+                                        /* Start Footer Section Formating */   
+                                                                                    
+/* formating the background color text aligment to center and padding   */
+.footer {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--lighter-dark);
+}
+                                           /* End Footer Section Formating */                                               
+
